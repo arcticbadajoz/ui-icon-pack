@@ -1,14 +1,12 @@
 import React from 'react';
 import { View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
+import type { IconProps } from './types';
 
 const WatchlistIcon = ({
   size = 30,
   color = '#0095D9',
-}: {
-  size?: number;
-  color?: string;
-}) => (
+}: IconProps) => (
   <View
     style={{
       width: size,

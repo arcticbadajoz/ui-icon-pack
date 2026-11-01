@@ -1,14 +1,13 @@
 import React from 'react';
 import { View } from 'react-native';
 import Svg, { Path, Rect } from 'react-native-svg';
+import type { IconProps } from './types';
 
 const CalendarIcon = ({
-  size,
+  size = 25,
   color,
   height = 1.6,
-}: {
-  size: number;
-  color?: string;
+}: IconProps & {
   height?: number;
 }) => (
   <View

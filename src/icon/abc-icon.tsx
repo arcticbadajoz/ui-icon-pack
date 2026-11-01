@@ -1,14 +1,9 @@
 import React from 'react';
 import { View } from 'react-native';
 import Svg, { ClipPath, Defs, G, Path, Rect } from 'react-native-svg';
+import type { IconProps } from './types';
 
-const AbcIcon = ({
-  color = '#1C274C',
-  size = 25,
-}: {
-  color?: string;
-  size?: number;
-}) => (
+const AbcIcon = ({ color = '#1C274C', size = 25 }: IconProps) => (
   <View
     style={{
       width: size,

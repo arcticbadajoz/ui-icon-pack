@@ -1,15 +1,11 @@
 import React from 'react';
 import { View } from 'react-native';
 import Svg, { Circle, Path } from 'react-native-svg';
+import type { IconProps } from './types';
 
 import { theme } from '../theme';
 
-interface MarketIconProps {
-  color?: string;
-  size?: number;
-}
-
-const MarketIcon: React.FC<MarketIconProps> = ({
+const MarketIcon: React.FC<IconProps> = ({
   color = theme.colors.primary,
   size = 25,
 }) => (

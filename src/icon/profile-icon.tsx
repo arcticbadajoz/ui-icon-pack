@@ -1,8 +1,9 @@
 import React from 'react';
 import { View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
+import type { IconProps } from './types';
 
-const ProfileIcon = ({ color, size = 25 }: { color?: string; size?: number }) => (
+const ProfileIcon = ({ color, size = 25 }: IconProps) => (
   <View
     style={{
       width: size,

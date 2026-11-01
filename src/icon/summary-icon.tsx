@@ -1,13 +1,11 @@
 import React from 'react';
 import Svg, { Path, Rect } from 'react-native-svg';
+import type { IconProps } from './types';
 
 const SummaryIcon = ({
   color,
   size = 25,
-}: {
-  color?: string;
-  size?: number;
-}) => (
+}: IconProps) => (
   <Svg
     width={size * 1.3}
     height={size * 1.15}

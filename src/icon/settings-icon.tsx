@@ -1,5 +1,6 @@
 import React from 'react';
 import Svg, { Path } from 'react-native-svg';
+import type { IconProps } from './types';
 
 const centerPath = 'M12 15a3 3 0 100-6 3 3 0 000 6z';
 const gearPath =
@@ -9,9 +10,7 @@ const SettingsIcon = ({
   color,
   size = 25,
   outline = false,
-}: {
-  color?: string;
-  size?: number;
+}: IconProps & {
   outline?: boolean;
 }) => (
   <Svg

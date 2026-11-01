@@ -1,14 +1,13 @@
 import React from 'react';
 import { View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
+import type { IconProps } from './types';
 
 const ChangeIcon = ({
   color,
   size = 25,
   strokeWidth = 1.8,
-}: {
-  color?: string;
-  size?: number;
+}: IconProps & {
   strokeWidth?: number;
 }) => (
   <View style={{ justifyContent: 'center', alignItems: 'center' }}>

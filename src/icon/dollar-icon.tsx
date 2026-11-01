@@ -1,16 +1,13 @@
 import React from 'react';
-import { View, type ViewStyle } from 'react-native';
+import { View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
+import type { IconProps } from './types';
 
 const DollarIcon = ({
-  size,
+  size = 25,
   color,
   style,
-}: {
-  size: number;
-  color?: string;
-  style?: ViewStyle;
-}) => (
+}: IconProps) => (
   <View
     style={[
       {

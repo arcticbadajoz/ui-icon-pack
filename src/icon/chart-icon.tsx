@@ -1,15 +1,11 @@
 import React from 'react';
 import { View } from 'react-native';
 import Svg, { Rect } from 'react-native-svg';
+import type { IconProps } from './types';
 
 import { theme } from '../theme';
 
-interface ChartIconProps {
-  size?: number;
-  color?: string;
-}
-
-const ChartIcon: React.FC<ChartIconProps> = ({
+const ChartIcon: React.FC<IconProps> = ({
   size = 20,
   color = theme.colors.primary,
 }) => (

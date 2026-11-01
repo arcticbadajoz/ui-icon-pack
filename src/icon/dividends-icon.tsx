@@ -1,14 +1,12 @@
 import React from 'react';
 import { View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
+import type { IconProps } from './types';
 
 const DividendsIcon = ({
   color = '#000000',
   size = 25,
-}: {
-  color?: string;
-  size?: number;
-}) => (
+}: IconProps) => (
   <View
     style={{
       width: size * 1.3,
