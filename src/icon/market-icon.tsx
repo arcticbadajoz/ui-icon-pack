@@ -3,10 +3,8 @@ import { View } from 'react-native';
 import Svg, { Circle, Path } from 'react-native-svg';
 import type { IconProps } from '../types';
 
-import { theme } from '../theme';
-
 const MarketIcon: React.FC<IconProps> = ({
-  color = theme.colors.primary,
+  color,
   size = 25,
 }) => (
   <View

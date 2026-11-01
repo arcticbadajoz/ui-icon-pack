@@ -1,17 +1,16 @@
 {
-  "name": "@yourname/rn-icons",
+  "name": "@arcticbadajoz/icon-pack",
   "version": "1.0.0",
   "description": "Reusable React Native SVG icons",
-  "main": "lib/commonjs/index.js",
-  "module": "lib/module/index.js",
-  "types": "lib/typescript/index.d.ts",
-  "react-native": "src/index.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
-    "src",
     "lib"
   ],
   "scripts": {
     "build": "tsc",
+    "clean": "rm -rf lib",
+    "rebuild": "npm run clean && npm run build",
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
@@ -22,6 +21,9 @@
   "devDependencies": {
     "@types/react": "^19.0.0",
     "@types/react-native": "^0.73.0",
+    "react": "^19.0.0",
+    "react-native": "^0.86.2",
+    "react-native-svg": "^15.0.0",
     "typescript": "^5.0.0"
   }
 }

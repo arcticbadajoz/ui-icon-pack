@@ -3,11 +3,9 @@ import { View } from 'react-native';
 import Svg, { Rect } from 'react-native-svg';
 import type { IconProps } from '../types';
 
-import { theme } from '../theme';
-
 const ChartIcon: React.FC<IconProps> = ({
   size = 20,
-  color = theme.colors.primary,
+  color,
 }) => (
   <View
     style={{
