@@ -1,6 +1,6 @@
 import React from 'react';
 import Svg, { Path, Rect } from 'react-native-svg';
-import type { IconProps } from './types';
+import type { IconProps } from '../types';
 
 const SummaryIcon = ({
   color,

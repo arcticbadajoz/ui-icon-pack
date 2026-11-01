@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import Svg, { Circle, Path } from 'react-native-svg';
-import type { IconProps } from './types';
+import type { IconProps } from '../types';
 
 const InfoIcon = ({ size = 30, color }: IconProps) => (
   <View

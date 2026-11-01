@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import Svg, { G, Path } from 'react-native-svg';
-import type { IconProps } from './types';
+import type { IconProps } from '../types';
 
 const path1 =
   'M20.9,17c-0.1,0.6-0.4,1.2-0.7,1.8l6.4,6.4c1.9-2.2,3.2-5,3.4-8.2H20.9z';

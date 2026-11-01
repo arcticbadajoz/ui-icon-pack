@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import Svg, { Rect } from 'react-native-svg';
-import type { IconProps } from './types';
+import type { IconProps } from '../types';
 
 const MoreIcon = ({
   size = 25,
