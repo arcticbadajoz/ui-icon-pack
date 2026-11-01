@@ -1,7 +1,8 @@
+import React from 'react';
 import { View } from 'react-native';
 import Svg, { Circle, Path } from 'react-native-svg';
 
-const InfoIcon = ({ size = 30, color }) => (
+const InfoIcon = ({ size = 30, color }: { size?: number; color?: string }) => (
   <View
     style={{
       width: size,

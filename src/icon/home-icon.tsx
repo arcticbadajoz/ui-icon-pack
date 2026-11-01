@@ -1,7 +1,16 @@
+import React from 'react';
 import { View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
-const HomeIcon = ({ size = 30, color, outline = false }) => (
+const HomeIcon = ({
+  size = 30,
+  color,
+  outline = false,
+}: {
+  size?: number;
+  color?: string;
+  outline?: boolean;
+}) => (
   <View
     style={{
       width: size,

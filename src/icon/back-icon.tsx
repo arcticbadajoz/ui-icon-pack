@@ -1,7 +1,16 @@
-import { View } from 'react-native';
+import React from 'react';
+import { View, type ViewStyle } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
-const BackIcon = ({ size = 30, color = '#000', style }) => (
+const BackIcon = ({
+  size = 30,
+  color = '#000',
+  style,
+}: {
+  size?: number;
+  color?: string;
+  style?: ViewStyle;
+}) => (
   <View
     style={[
       {

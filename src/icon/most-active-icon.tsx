@@ -1,7 +1,14 @@
+import React from 'react';
 import { View } from 'react-native';
 import Svg, { Path, Rect } from 'react-native-svg';
 
-const MostActiveIcon = ({ size = 30, color }) => (
+const MostActiveIcon = ({
+  size = 30,
+  color,
+}: {
+  size?: number;
+  color?: string;
+}) => (
   <View
     style={{
       width: size,

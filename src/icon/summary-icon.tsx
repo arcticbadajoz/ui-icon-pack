@@ -1,6 +1,13 @@
+import React from 'react';
 import Svg, { Path, Rect } from 'react-native-svg';
 
-const SummaryIcon = ({ color, size = 25 }) => (
+const SummaryIcon = ({
+  color,
+  size = 25,
+}: {
+  color?: string;
+  size?: number;
+}) => (
   <Svg
     width={size * 1.3}
     height={size * 1.15}
@@ -9,8 +16,7 @@ const SummaryIcon = ({ color, size = 25 }) => (
     stroke={color}
     strokeWidth={1.5}
     strokeLinecap={'round'}
-    strokeLinejoin={'round'}
-    className={'w-6 h-6'}>
+    strokeLinejoin={'round'}>
     <Path
       d={
         'M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2'

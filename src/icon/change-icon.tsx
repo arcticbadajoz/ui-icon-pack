@@ -2,7 +2,15 @@ import React from 'react';
 import { View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
-const ChangeIcon = ({ color, size = 25, strokeWidth = 1.8 }) => (
+const ChangeIcon = ({
+  color,
+  size = 25,
+  strokeWidth = 1.8,
+}: {
+  color?: string;
+  size?: number;
+  strokeWidth?: number;
+}) => (
   <View style={{ justifyContent: 'center', alignItems: 'center' }}>
     <Svg
       width={size * 1.3}

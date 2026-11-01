@@ -2,7 +2,13 @@ import React from 'react';
 import { View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
-const CalculatorIcon = ({ color, size = 25 }) => (
+const CalculatorIcon = ({
+  color,
+  size = 25,
+}: {
+  color?: string;
+  size?: number;
+}) => (
   <View style={{ justifyContent: 'center', alignItems: 'center' }}>
     <Svg
       width={size * 1.3}

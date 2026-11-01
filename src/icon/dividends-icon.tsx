@@ -2,7 +2,13 @@ import React from 'react';
 import { View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
-const DividendsIcon = ({ color = '#000000', size = 25 }) => (
+const DividendsIcon = ({
+  color = '#000000',
+  size = 25,
+}: {
+  color?: string;
+  size?: number;
+}) => (
   <View
     style={{
       width: size * 1.3,

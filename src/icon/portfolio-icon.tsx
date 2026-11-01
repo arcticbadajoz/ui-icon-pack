@@ -1,3 +1,4 @@
+import React from 'react';
 import { View } from 'react-native';
 import Svg, { G, Path } from 'react-native-svg';
 
@@ -8,7 +9,15 @@ const path2 =
 const path3 =
   'M18.8,20.2C18,20.7,17,21,16,21c-2.8,0-5-2.2-5-5c0-2.4,1.7-4.4,4-4.9V2.1C7.7,2.6,2,8.6,2,16c0,7.7,6.3,14,14,14c3.5,0,6.7-1.3,9.2-3.4L18.8,20.2z';
 
-const PortfolioIcon = ({ size = 30, color = '#000000', outline = false }) => (
+const PortfolioIcon = ({
+  size = 30,
+  color = '#000000',
+  outline = false,
+}: {
+  size?: number;
+  color?: string;
+  outline?: boolean;
+}) => (
   <View
     style={{
       width: size,

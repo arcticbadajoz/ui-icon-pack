@@ -1,7 +1,16 @@
+import React from 'react';
 import { View } from 'react-native';
 import Svg, { Path, Rect } from 'react-native-svg';
 
-const CalendarIcon = ({ size, color, height = 1.6 }) => (
+const CalendarIcon = ({
+  size,
+  color,
+  height = 1.6,
+}: {
+  size: number;
+  color?: string;
+  height?: number;
+}) => (
   <View
     style={{
       width: size,

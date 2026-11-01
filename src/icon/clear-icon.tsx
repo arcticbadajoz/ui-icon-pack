@@ -2,7 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
-const RemoveIcon = ({ color, size = 25 }) => (
+const ClearIcon = ({ color, size = 25 }: { color?: string; size?: number }) => (
   <View style={{ justifyContent: 'center', alignItems: 'center' }}>
     <Svg
       width={size * 1.3}
@@ -10,11 +10,9 @@ const RemoveIcon = ({ color, size = 25 }) => (
       viewBox={'0 0 24 24'}
       fill={'none'}>
       <Path
-        d={
-          'M8 12H16M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z'
-        }
+        d={'M7 7L17 17M17 7L7 17'}
         stroke={color || '#000000'}
-        strokeWidth={1.4}
+        strokeWidth={1.6}
         strokeLinecap={'round'}
         strokeLinejoin={'round'}
       />
@@ -22,4 +20,4 @@ const RemoveIcon = ({ color, size = 25 }) => (
   </View>
 );
 
-export default RemoveIcon;
+export default ClearIcon;

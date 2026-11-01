@@ -1,7 +1,8 @@
+import React from 'react';
 import { View } from 'react-native';
 import Svg, { Path, Rect } from 'react-native-svg';
 
-const IdIcon = ({ color, size = 25 }) => (
+const IdIcon = ({ color, size = 25 }: { color?: string; size?: number }) => (
   <View
     style={{
       width: size * 1.15,

@@ -1,7 +1,16 @@
+import React from 'react';
 import { View } from 'react-native';
 import Svg, { Rect } from 'react-native-svg';
 
-const MoreIcon = ({ size, color, outline = false }) => (
+const MoreIcon = ({
+  size,
+  color,
+  outline = false,
+}: {
+  size: number;
+  color?: string;
+  outline?: boolean;
+}) => (
   <View
     style={{
       width: size,
