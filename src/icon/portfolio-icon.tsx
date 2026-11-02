@@ -12,7 +12,7 @@ const path3 =
 
 const PortfolioIcon = ({
   size = 30,
-  color = '#000000',
+  color,
   outline = false,
 }: IconProps & {
   outline?: boolean;

@@ -1,5 +1,7 @@
 export { default as AbcIcon } from './icon/abc-icon';
+export { default as AddIcon } from './icon/add-icon';
 export { default as BackIcon } from './icon/back-icon';
+export { default as BarChartIcon } from './icon/bar-chart-icon';
 export { default as BarIcon } from './icon/bar-icon';
 export { default as BellIcon } from './icon/bell-icon';
 export { default as CalculatorIcon } from './icon/calculator-icon';
@@ -8,6 +10,7 @@ export { default as ChangeIcon } from './icon/change-icon';
 export { default as ChartIcon } from './icon/chart-icon';
 export { default as ChevronIcon } from './icon/chevron-icon';
 export { default as ClearIcon } from './icon/clear-icon';
+export { default as DeleteIcon } from './icon/delete-icon';
 export { default as DollarIcon } from './icon/dollar-icon';
 export { default as DownloadIcon } from './icon/download-icon';
 export { default as EditIcon } from './icon/edit-icon';

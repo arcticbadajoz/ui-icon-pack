@@ -5,7 +5,7 @@ import type { IconProps } from '../types';
 
 const BackIcon = ({
   size = 30,
-  color = '#000',
+  color,
   style,
 }: IconProps) => (
   <View

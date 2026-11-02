@@ -4,7 +4,7 @@ import Svg, { Path } from 'react-native-svg';
 import type { IconProps } from '../types';
 
 const PayIcon = ({
-  color = '#000000',
+  color,
   size = 25,
 }: IconProps) => (
   <View

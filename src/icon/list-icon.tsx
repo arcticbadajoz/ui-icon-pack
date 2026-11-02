@@ -5,7 +5,7 @@ import type { IconProps } from '../types';
 
 const ListIcon = ({
   size = 30,
-  color = '#0095D9',
+  color,
 }: IconProps) => (
   <View
     style={{
