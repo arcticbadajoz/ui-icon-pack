@@ -11,6 +11,8 @@
     "build": "tsc",
     "clean": "rm -rf lib",
     "rebuild": "npm run clean && npm run build",
+    "lint": "eslint src",
+    "lint:fix": "./node_modules/.bin/eslint src --ext .ts,.tsx --fix",
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
@@ -19,11 +21,14 @@
     "react-native-svg": ">=13"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@types/react": "^19.0.0",
     "@types/react-native": "^0.73.0",
+    "eslint": "^10.14.0",
     "react": "^19.0.0",
     "react-native": "^0.86.2",
     "react-native-svg": "^15.0.0",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "typescript-eslint": "^8.72.1"
   }
 }
