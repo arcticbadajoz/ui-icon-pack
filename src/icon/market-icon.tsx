@@ -9,7 +9,7 @@ interface MarketIconProps extends IconProps {
 
 const MarketIcon: React.FC<MarketIconProps> = ({
   color,
-  size = 36,
+  size = 25,
   outline = false,
 }) => (
   <View

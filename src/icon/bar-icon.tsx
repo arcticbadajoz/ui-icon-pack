@@ -4,7 +4,7 @@ import Svg, { Path, Rect } from 'react-native-svg';
 import type { IconProps } from '../types';
 
 const BarIcon = ({
-  size = 30,
+  size = 25,
   color,
 }: IconProps) => (
   <View

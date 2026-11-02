@@ -4,7 +4,7 @@ import Svg, { Rect } from 'react-native-svg';
 import type { IconProps } from '../types';
 
 const ChartIcon: React.FC<IconProps> = ({
-  size = 20,
+  size = 25,
   color,
 }) => (
   <View

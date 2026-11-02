@@ -4,7 +4,7 @@ import Svg, { Path } from 'react-native-svg';
 import type { IconProps } from '../types';
 
 const BackIcon = ({
-  size = 30,
+  size = 25,
   color,
   style,
 }: IconProps) => (

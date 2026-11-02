@@ -3,7 +3,10 @@ import { View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 import type { IconProps } from '../types';
 
-const TrendIcon = ({ color, size = 25 }: IconProps) => (
+const TrendIcon = ({
+  color,
+  size = 25,
+}: IconProps) => (
   <View style={{ justifyContent: 'center', alignItems: 'center' }}>
     <Svg
       width={size * 1.3}
