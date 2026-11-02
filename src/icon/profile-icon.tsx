@@ -3,7 +3,13 @@ import { View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 import type { IconProps } from '../types';
 
-const ProfileIcon = ({ color, size = 25 }: IconProps) => (
+const ProfileIcon = ({
+  color,
+  size = 25,
+  outline = false,
+}: IconProps & {
+  outline?: boolean;
+}) => (
   <View
     style={{
       width: size,
@@ -22,11 +28,11 @@ const ProfileIcon = ({ color, size = 25 }: IconProps) => (
           C17 4.2386 14.7614 2 12 2
           Z
         `}
-        fill={'none'}
-        stroke={color}
-        strokeWidth={1.5}
-        strokeLinecap={'round'}
-        strokeLinejoin={'round'}
+        fill={outline ? 'none' : color}
+        stroke={outline ? color : undefined}
+        strokeWidth={outline ? 1.5 : undefined}
+        strokeLinecap={outline ? 'round' : undefined}
+        strokeLinejoin={outline ? 'round' : undefined}
       />
 
       {/* Shoulders / body */}
@@ -40,11 +46,11 @@ const ProfileIcon = ({ color, size = 25 }: IconProps) => (
           C20 16.2386 17.7614 14 15 14
           Z
         `}
-        fill={'none'}
-        stroke={color}
-        strokeWidth={1.5}
-        strokeLinecap={'round'}
-        strokeLinejoin={'round'}
+        fill={outline ? 'none' : color}
+        stroke={outline ? color : undefined}
+        strokeWidth={outline ? 1.5 : undefined}
+        strokeLinecap={outline ? 'round' : undefined}
+        strokeLinejoin={outline ? 'round' : undefined}
       />
     </Svg>
   </View>
