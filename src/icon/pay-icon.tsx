@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 import type { IconProps } from '../types';
 
-const DividendsIcon = ({
+const PayIcon = ({
   color = '#000000',
   size = 25,
 }: IconProps) => (
@@ -26,4 +26,4 @@ const DividendsIcon = ({
   </View>
 );
 
-export default DividendsIcon;
+export default PayIcon;

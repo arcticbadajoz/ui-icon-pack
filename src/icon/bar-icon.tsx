@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import Svg, { Path, Rect } from 'react-native-svg';
 import type { IconProps } from '../types';
 
-const MostActiveIcon = ({
+const BarIcon = ({
   size = 30,
   color,
 }: IconProps) => (
@@ -51,4 +51,4 @@ const MostActiveIcon = ({
   </View>
 );
 
-export default MostActiveIcon;
+export default BarIcon;
