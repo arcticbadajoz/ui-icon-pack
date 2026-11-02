@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 import type { IconProps } from '../types';
 
-const WatchlistIcon = ({
+const ListIcon = ({
   size = 30,
   color = '#0095D9',
 }: IconProps) => (
@@ -45,4 +45,4 @@ const WatchlistIcon = ({
   </View>
 );
 
-export default WatchlistIcon;
+export default ListIcon;
