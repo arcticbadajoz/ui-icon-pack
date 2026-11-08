@@ -18,7 +18,7 @@ const SettingsIcon = ({
   <Svg
     width={size}
     height={size}
-    viewBox="2 2 20 20"
+    viewBox="4 4 16 16" // Adjusted from "2 2 20 20" to zoom in on the icon
     fill={outline ? 'none' : color}
     stroke={outline ? color : undefined}
     strokeWidth={outline ? 1 : undefined}
