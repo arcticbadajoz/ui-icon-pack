@@ -1,6 +1,6 @@
 {
   "name": "@arcticbadajoz/ui-icon-pack",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Reusable React Native SVG icons",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "bump": "bash bump.sh",
+    "bump": "sh bump.sh",
     "clean": "rm -rf lib",
     "rebuild": "npm run clean && npm run build",
     "lint": "eslint src",
