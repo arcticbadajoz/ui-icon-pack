@@ -1,6 +1,6 @@
 {
   "name": "@arcticbadajoz/ui-icon-pack",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Reusable React Native SVG icons",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
