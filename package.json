@@ -1,6 +1,6 @@
 {
   "name": "@arcticbadajoz/ui-icon-pack",
-  "version": "v1.0.1",
+  "version": "1.0.2",
   "description": "Reusable React Native SVG icons",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -32,6 +32,7 @@
     "typescript-eslint": "^8.72.1"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }
