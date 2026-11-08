@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import Svg, { ClipPath, Defs, G, Path, Rect } from 'react-native-svg';
+import Svg, { Path } from 'react-native-svg';
 import type { IconProps } from '../types';
 
 const AbcIcon = ({ color, size = 25 }: IconProps) => (
@@ -11,34 +11,11 @@ const AbcIcon = ({ color, size = 25 }: IconProps) => (
       justifyContent: 'center',
       alignItems: 'center',
     }}>
-    <Svg width={size * 1.65} height={size} viewBox={'0 0 52 32'} fill={'none'}>
-      <Defs>
-        {/* Trims every stroke flat at the top and bottom of the letters */}
-        <ClipPath id={'letterBounds'}>
-          <Rect x={'0'} y={'8'} width={'52'} height={'16'} />
-        </ClipPath>
-      </Defs>
-
-      <G
-        clipPath={'url(#letterBounds)'}
-        stroke={color}
-        strokeWidth={3}
-        strokeLinecap={'butt'}
-        strokeLinejoin={'miter'}
-        fill={'none'}>
-        {/* Letter A: outer x 6 → 20 */}
-        <Path d={'M7 26L13 10L19 26M10 19.5H16'} />
-
-        {/* Letter B: outer x 23 → 33.5 */}
-        <Path
-          d={
-            'M24.5 8V24M24.5 9.5H28.75A3.25 3.25 0 0 1 28.75 16H24.5M24.5 16H28.75A3.25 3.25 0 0 1 28.75 22.5H24.5'
-          }
-        />
-
-        {/* Letter C: outer x 36.5 → ~46.5 */}
-        <Path d={'M45.4 11A4.5 6.5 0 1 0 45.4 21'} />
-      </G>
+    <Svg width={size} height={size} viewBox="3 4 18 16" fill="none">
+      <Path
+        fill={color}
+        d="M17 15q-.425 0-.712-.288T16 14v-4q0-.425.288-.712T17 9h3q.425 0 .713.288T21 10v1h-1.5v-.5h-2v3h2V13H21v1q0 .425-.288.713T20 15zm-7.5 0V9h4q.425 0 .713.288T14.5 10v1q0 .425-.288.713T13.5 12q.425 0 .713.288T14.5 13v1q0 .425-.288.713T13.5 15zm1.5-3.75h2v-.75h-2zm0 2.25h2v-.75h-2zM3 15v-5q0-.425.288-.712T4 9h3q.425 0 .713.288T8 10v5H6.5v-1.5h-2V15zm1.5-3h2v-1.5h-2z"
+      />
     </Svg>
   </View>
 );

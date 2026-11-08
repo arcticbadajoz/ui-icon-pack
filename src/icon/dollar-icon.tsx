@@ -7,6 +7,7 @@ const DollarIcon = ({
   size = 25,
   color,
   style,
+  strokeWidth = 1.6,
 }: IconProps) => (
   <View
     style={[
@@ -24,7 +25,7 @@ const DollarIcon = ({
         d={'M12 3 V5.5'}
         fill={'none'}
         stroke={color}
-        strokeWidth={1.6}
+        strokeWidth={strokeWidth}
         strokeLinecap={'round'}
       />
 
@@ -33,7 +34,7 @@ const DollarIcon = ({
         d={'M12 18.5 V21'}
         fill={'none'}
         stroke={color}
-        strokeWidth={1.6}
+        strokeWidth={strokeWidth}
         strokeLinecap={'round'}
       />
 
@@ -44,7 +45,7 @@ const DollarIcon = ({
         }
         fill={'none'}
         stroke={color}
-        strokeWidth={2}
+        strokeWidth={strokeWidth}
         strokeLinecap={'round'}
         strokeLinejoin={'round'}
       />
