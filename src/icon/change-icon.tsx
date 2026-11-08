@@ -6,35 +6,29 @@ import type { IconProps } from '../types';
 const ChangeIcon = ({
   color,
   size = 25,
-  strokeWidth = 1.8,
-}: IconProps & {
-  strokeWidth?: number;
-}) => (
+}: IconProps) => (
   <View style={{ justifyContent: 'center', alignItems: 'center' }}>
     <Svg
       width={size * 1.3}
-      height={size * 1.15}
+      height={size * 1.3}
       viewBox={'0 0 24 24'}
       fill={'none'}>
       <Path
-        d={'M11 7L8 4L5 7'}
-        stroke={color || '#000000'}
-        strokeWidth={strokeWidth}
-        strokeLinecap={'round'}
+        fillRule={'evenodd'}
+        clipRule={'evenodd'}
+        d={'M6.00003 12C6.00003 8.67198 8.64024 6 11.8655 6C14.03 6 15.9294 7.20124 16.9464 9L15 9L15 10.5L19.5 10.5L19.5 6L18 6L18 7.84807C16.6827 5.83414 14.4311 4.5 11.8655 4.5C7.78348 4.5 4.50003 7.87217 4.50003 12L6.00003 12Z'}
+        fill={color || '#080341'}
+        stroke={color || '#080341'}
+        strokeWidth={0.08}
         strokeLinejoin={'round'}
       />
       <Path
-        d={'M13 17L16 20L19 17'}
-        stroke={color || '#000000'}
-        strokeWidth={strokeWidth}
-        strokeLinecap={'round'}
-        strokeLinejoin={'round'}
-      />
-      <Path
-        d={'M8 20V4M16 4V20'}
-        stroke={color || '#000000'}
-        strokeWidth={strokeWidth}
-        strokeLinecap={'round'}
+        fillRule={'evenodd'}
+        clipRule={'evenodd'}
+        d={'M18 12C18 15.328 15.3598 18 12.1346 18C9.97007 18 8.0706 16.7988 7.05359 15L9.00003 15L9.00003 13.5L4.50003 13.5L4.50003 18L6.00003 18L6.00003 16.1519C7.31734 18.1659 9.56889 19.5 12.1346 19.5C16.2165 19.5 19.5 16.1278 19.5 12L18 12Z'}
+        fill={color || '#080341'}
+        stroke={color || '#080341'}
+        strokeWidth={0.08}
         strokeLinejoin={'round'}
       />
     </Svg>
